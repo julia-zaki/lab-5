@@ -4,6 +4,13 @@ import javax.swing.JFrame;
 
 /**
  * The Main class of our application.
+ * Main: Karmen
+ * LogoutController: Edan
+ * LogoutPresenter: Christina
+ * LogoutInputData: Roy
+ * LogoutInteractor: Roy
+ * LogoutOutputData: Karmen
+ * LoggedInView: Julia
  */
 public class Main {
     /**
@@ -26,3 +33,5 @@ public class Main {
         application.setVisible(true);
     }
 }
+
+
