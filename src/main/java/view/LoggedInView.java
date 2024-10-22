@@ -19,7 +19,7 @@ import interface_adapter.change_password.LoggedInViewModel;
 import interface_adapter.logout.LogoutController;
 
 /**
- * The View for when the user is logged into the program.
+ * The View is for when the user is logged into the program.
  */
 public class LoggedInView extends JPanel implements PropertyChangeListener {
 
