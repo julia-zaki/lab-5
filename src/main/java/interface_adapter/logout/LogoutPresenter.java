@@ -13,9 +13,9 @@ import use_case.logout.LogoutOutputData;
  */
 public class LogoutPresenter implements LogoutOutputBoundary {
 
-    private LoggedInViewModel loggedInViewModel;
-    private ViewManagerModel viewManagerModel;
-    private LoginViewModel loginViewModel;
+    private final LoggedInViewModel loggedInViewModel;
+    private final ViewManagerModel viewManagerModel;
+    private final LoginViewModel loginViewModel;
 
     public LogoutPresenter(ViewManagerModel viewManagerModel,
                           LoggedInViewModel loggedInViewModel,
@@ -47,6 +47,8 @@ public class LogoutPresenter implements LogoutOutputBoundary {
         // 6. set the username and password in the state to the empty string
         loginState.setUsername("");
         loginState.setPassword("");
+        // set the login error to the empty string as well
+        loginState.setLoginError("");
         // 7. set the state in the LoginViewModel to the updated state
         loginViewModel.setState(loginState);
         // 8. firePropertyChanged so that the View that is listening is updated.
